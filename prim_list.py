@@ -15,5 +15,10 @@ db = client.merigold
 collection = db.customer    
 
 print("Affiche des fiches de la société Primeur & co")
+
 for fiche in collection.find({'society': 'Primeur & co'}):
-    pprint.pprint(fiche)
+    print("-")
+    print(fiche["forname"], fiche["name"])
+    print(fiche["date"], ":", fiche["result"])
+
+print("-")
