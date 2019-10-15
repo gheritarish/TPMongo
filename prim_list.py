@@ -21,4 +21,9 @@ for fiche in collection.find({'society': 'Primeur & co'}):
     print(fiche["forname"], fiche["name"])
     print(fiche["date"], ":", fiche["result"])
 
+    try:
+        print("email :", fiche["email"])
+    except:
+        print("no email")
+
 print("-")
