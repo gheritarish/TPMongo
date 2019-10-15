@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Oct 14 10:15:00 2019
+
+@author: Hersemeule
+"""
+
 import pymongo as pm
 import pprint
 
